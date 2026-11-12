@@ -261,9 +261,9 @@
             </div>
 
             <div class="room-footer">
-              <button class="btn btn-primary" data-inquire-room="room1">
+              <a href="#booking" class="btn btn-primary" data-inquire-room="room1">
                 <i class="fa-solid fa-calendar-plus"></i> Inquire Room 1
-              </button>
+              </a>
             </div>
           </div>
         </article>
@@ -315,9 +315,9 @@
             </div>
 
             <div class="room-footer">
-              <button class="btn btn-primary" data-inquire-room="room2">
+              <a href="#booking" class="btn btn-primary" data-inquire-room="room2">
                 <i class="fa-solid fa-calendar-plus"></i> Inquire Room 2
-              </button>
+              </a>
             </div>
           </div>
         </article>
@@ -455,7 +455,7 @@
   <!-- BOOKING INQUIRY & CONTACT SECTION -->
   <section class="section section-alt" id="booking">
     <div class="container">
-      <div class="contact-grid">
+      <div class="contact-grid" style="grid-template-columns: 1fr; max-width: 800px; margin: 0 auto;">
         <!-- CONTACT INFO CARD -->
         <div class="contact-info">
           <h3>Get In Touch</h3>
@@ -500,66 +500,6 @@
               <i class="fa-solid fa-beer-mug-empty" style="color: var(--accent);"></i> Located directly opposite <strong>The Star and Garter</strong> village pub for great food and drinks.
             </p>
           </div>
-        </div>
-
-        <!-- BOOKING INQUIRY FORM -->
-        <div class="booking-form-card">
-          <h3>Send a Booking Inquiry</h3>
-          <p>Fill out the form below to request room availability for your dates.</p>
-
-          <form id="bookingForm" action="https://formsubmit.co/middlefarmvilla@aol.com" method="POST">
-            <!-- FormSubmit Configuration -->
-            <input type="hidden" name="_subject" value="New B&B Booking Inquiry - Middle Farm Villa">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_captcha" value="false">
-
-            <div class="form-grid">
-              <div class="form-group">
-                <label for="guestName">Your Full Name *</label>
-                <input type="text" id="guestName" name="Full Name" class="form-control" placeholder="e.g. John Smith" required>
-              </div>
-
-              <div class="form-group">
-                <label for="guestEmail">Email Address *</label>
-                <input type="email" id="guestEmail" name="Email Address" class="form-control" placeholder="john@example.com" required>
-              </div>
-
-              <div class="form-group">
-                <label for="guestPhone">Phone Number *</label>
-                <input type="tel" id="guestPhone" name="Phone Number" class="form-control" placeholder="07123 456789" required>
-              </div>
-
-              <div class="form-group">
-                <label for="roomSelect">Preferred Room *</label>
-                <select id="roomSelect" name="Preferred Room" class="form-control" required>
-                  <option value="room1">Room One (£65/night)</option>
-                  <option value="room2">Room Two (£65/night - Garden Patio)</option>
-                  <option value="either">Either Room / Flexible</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="checkIn">Check-In Date *</label>
-                <input type="date" id="checkIn" name="Check-In Date" class="form-control" required>
-              </div>
-
-              <div class="form-group">
-                <label for="checkOut">Check-Out Date *</label>
-                <input type="date" id="checkOut" name="Check-Out Date" class="form-control" required>
-              </div>
-
-              <div class="form-group full-width">
-                <label for="specialRequests">Special Requests / Dietary Requirements</label>
-                <textarea id="specialRequests" name="Special Requests" class="form-control" placeholder="e.g. Additional single bed for twin setup, gluten-free breakfast, pet inquiry..."></textarea>
-              </div>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 1rem;">
-              <i class="fa-solid fa-paper-plane"></i> Submit Inquiry
-            </button>
-
-            <div id="formStatus" class="form-status"></div>
-          </form>
         </div>
       </div>
     </div>
